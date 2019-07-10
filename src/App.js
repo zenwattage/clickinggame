@@ -23,7 +23,7 @@ function App() {
           </Button>
         </a>
       </header>
-    </div>
+  </div>
   );
 }
 
