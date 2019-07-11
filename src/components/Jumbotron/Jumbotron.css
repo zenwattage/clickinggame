@@ -2,6 +2,7 @@
 .header {
     background-color: #96D5A2;
     width: 100%;
+    position: relative ;
     padding-bottom: 5px;
 }
 
