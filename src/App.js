@@ -11,7 +11,12 @@ class App extends Component {
     highscore: 0
   };
 
-
+  //image click even handler
+  imageClick = event => {
+    let currentHighScore = this.state.highscore;
+    const currentPhoto = event.target;
+    const clickedPhotos = this.state.clickedPhoto.indexOf(currentPhoto);
+  }
 
 }
 
