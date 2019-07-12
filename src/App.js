@@ -1,22 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Jumbotron from "./components/Jumbotron";
 import Button from '@material-ui/core/Button';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-       
-       <Jumbotron />
-        
-          <Button variant="contained" color="primary">
-            Clicky Clackity
-          </Button>
-        
-  </div>
-  );
+class App extends Component {
+  state = {
+    photo,
+    clickedPhoto: [],
+    score: 0,
+    highscore: 0
+  };
+
+
+
 }
-
-
 
 export default App;
