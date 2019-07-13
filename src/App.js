@@ -3,6 +3,7 @@ import Jumbotron from "./components/Jumbotron";
 import Button from '@material-ui/core/Button';
 import photo from "./photo.json";
 import './App.css';
+import Card from "./components/Card";
 
 class App extends Component {
   state = {
