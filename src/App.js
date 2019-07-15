@@ -6,12 +6,15 @@ import './App.css';
 import Card from "./components/Card";
 
 class App extends Component {
-  state = {
+  constructor(props) {
+    super(props);
+    this.state = {
     photo,
     clickedPhoto: [],
     score: 0,
     highscore: 0
   };
+}
 
   //image click even handler
   imageClick = event => {
@@ -44,7 +47,7 @@ class App extends Component {
         },
 
         () => {
-          if(this.state.score == 9) {
+          if(this.state.score === 9) {
             alert("You win!");
             this.setState({
               photo: this.state.photo.sort(function(a,b) {
@@ -58,8 +61,32 @@ class App extends Component {
         }
       );
     }
-  }
-
 };
+
+  render() {
+    return (
+      <div>
+        <Jumbotron 
+          score={this.state.score}
+          highscore={this.state.highscore}
+          />
+          <Button> Here we go!</Button>
+
+        <div className="wrapper">
+
+        {this.state.photo.map(photo => (
+          < Card
+            imageClick = {this.imageClick}
+            id={photo.id}
+            key={photo.id}
+            photo={photo.image}
+            />
+        ))}
+
+      </div>
+    </div>
+    );
+  }
+}
 
 export default App;
