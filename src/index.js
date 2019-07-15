@@ -8,7 +8,7 @@ import { photos } from "./photos";
 import { render } from "react-dom";
 
 const BasicRows = () => <Gallery photos={photos} />;
-ender(<BasicRows />, document.getElementById("app"));
+render(<BasicRows />, document.getElementById("app"));
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
