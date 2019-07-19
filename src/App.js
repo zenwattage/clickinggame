@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import Jumbotron from "./components/Jumbotron";
+import Wrapper from "./components/Wrapper";
 import Button from '@material-ui/core/Button';
-import photo from "./photo.json";
 import './App.css';
 import Card from "./components/Card";
+import cards from "./photo.json"
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    photo,
-    clickedPhoto: [],
+  
+  state = {
+    cards,
     score: 0,
     highscore: 0
   };
-}
 
   //image click even handler
   imageClick = event => {
@@ -65,15 +62,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Jumbotron 
-          score={this.state.score}
-          highscore={this.state.highscore}
-          />
+      <Wrapper>
+     
           <Button> Here we go!</Button>
-
-        <div className="wrapper">
-
         {this.state.photo.map(photo => (
           < Card
             imageClick = {this.imageClick}
@@ -82,9 +73,7 @@ class App extends Component {
             photo={photo.image}
             />
         ))}
-
-      </div>
-    </div>
+      </Wrapper>
     );
   }
 }
