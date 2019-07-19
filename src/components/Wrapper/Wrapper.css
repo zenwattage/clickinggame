@@ -1,0 +1,7 @@
+.wrapper {
+    background-color: blue;
+    height: 100%;
+    padding-top: 30px;
+    justify-content: space-around;
+    align-content: flex-start;
+}
