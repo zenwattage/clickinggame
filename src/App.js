@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Wrapper from "./components/Wrapper";
-import Button from '@material-ui/core/Button';
 import './App.css';
 import Card from "./components/Card";
 import cards from "./photo.json"
