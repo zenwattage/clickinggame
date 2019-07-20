@@ -1,23 +1,25 @@
 
 .card {
-    background-color: blue;
+    background-color: #00529C;
     height: 250px;
     border-radius: 2px;
     width: 330px;
     position: relative;
     margin: 1rem;
     text-align: left;
+    box-shadow: 7px 8px 1px #00529C;
 }
 
 .card > .img-container {
+    padding-top: 50px;
     height: 100%;
     overflow: hidden;
     text-align: center;
-    background: purple;
+    background: #050F2B;
 }
 
 .card > .img-container > img {
-    width: 60%;
+    width: 80%;
 }
 
 .card > .content {

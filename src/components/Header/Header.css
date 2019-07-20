@@ -1,9 +1,16 @@
 .header {
-    width: 100%;
+    border-radius: 2px;
+    padding: 10px;
+    border: 5px #00529C solid;
+    box-shadow: 4px 4px 2px rgb(17, 81, 136);
+    width: 90%;
     margin-bottom: 15px;
+    font-size: 4rem;
+
 }
 
 .title {
+
     float: left;
 }
 
