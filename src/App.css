@@ -2,9 +2,6 @@
   text-align: center;
 }
 
-img , .img-container {
-  object-fit: contain;
-}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

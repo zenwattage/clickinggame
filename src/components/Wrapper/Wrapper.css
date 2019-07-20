@@ -4,4 +4,7 @@
     padding-top: 30px;
     justify-content: space-around;
     align-content: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
 }

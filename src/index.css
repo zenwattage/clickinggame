@@ -2,12 +2,12 @@
   box-sizing: border-box;
 
 }
-
+/* 
 html, body, #root {
   padding: 0;
   margin: 0;
   height: 100%;
-}
+} */
 
 body {
   margin: 0;
@@ -30,10 +30,6 @@ h2 {
   color: #F5410A;
 }
 
-.card, .img-container {
-  width: 20%;
-  height: 20%;
-}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
