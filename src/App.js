@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Wrapper from "./components/Wrapper";
-
 import Card from "./components/Card";
 import Header from "./components/Header";
 import photos from "./photos.json";
@@ -34,7 +33,7 @@ class App extends Component {
       if (o.id === id) {
         if (photos[i].count === 0) {
           photos[i].count = photos[i].count + 1;
-          this.setState({ score: this.state.score + 1 }, function() {
+          this.setState({ score: this.state.score + 1 }, function () {
             log(this.state.score);
           });
           this.state.photos.sort(() => Math.random() - 0.5)
@@ -49,7 +48,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        <Header score={this.state.score} highscore={this.state.highscore}>ClickityClackity</Header>
         {this.state.photos.map(photo => (
           <Card
             clickCount={this.clickCount}
