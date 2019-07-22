@@ -1,5 +1,7 @@
 # clicky clackity
-An image clicking game built with React
+An image clicking game built with React and deployed on Heroku!
+
+Try the game here: https://clickity-clackity-app.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
